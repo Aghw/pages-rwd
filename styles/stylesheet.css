@@ -228,8 +228,8 @@ footer p {
  }
 
 .send-your-opinion {
-  align-content: center
-  margin: auto;
+  align-content: center;
+  margin: 0 auto;
 }
 
 .submit-visitor-opinion {
