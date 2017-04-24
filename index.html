@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+
+      <title>HTML5 200A - RWD</title>
+
+      <link rel="stylesheet"  type="text/css" href="styles/stylesheet.css">
+
+      <style>
+      @import url('https://fonts.googleapis.com/css?family=Syncopate');
+      </style>
+
+  </head>
+  <body>
+      <header class="main-header-content">
+          <div class="header-logo-and-title">
+            <h1 id="primary-content">My Portfolio: A Short Explanation About RWD</h1>
+          </div>
+      </header>
+
+
+      <main class="main-body-of-page">
+        <article class="rwd-explaining">
+          <h2>Problems that Responsive Web Design meant to solve</h2>
+           <p>
+             Responsive Web design is a technique meant to help make websites be compatible to mobile devices as well as to traditional computer screens and practically to any screen resolution. Since it is impractical to design custom websites for varying screen resolution, screen orientation and for any device out there, people realized that it is essential to come up with a technology that would allow us to design websites that respond to user's screen resolution and platform. Hence the Responsive Web Design approach to web design was created to make websites adapt an adjustable screen resolution as well as to repond automatically to landscape and portrait orientation of devices at any instance.
+           </p>
+           <p>
+             The concept of Responsive web design was introduced by Ethan Marcotte and he wanted the website to be flexible like a room that adjusts to the number of occupants within it. With Responsive Web Design, flexibile design of websites can be employed to make websites fit automatically into any screen resolution.
+
+           </p>
+        </article>
+          <br>
+          <hr>
+          <br>
+
+
+        <div class="practice-form">
+          <h2>Thank you for visiting my site. Please spend few seconds below to comment about this page.</h2>
+           <form class="form-2" >
+            <div class="grid grid-guttered">
+
+                <div class="grid-col-6">
+                  <fieldset class="visitor-input1">
+                    <legend>Enter Personal Info</legend>
+                    <label for="full-name">Enter Full-name:</label>
+                    <input type="text" name="visitor-full-name" id="full-name">
+                    <br>
+                    <label for="residential-address">Enter Address:</label>
+                    <input type="text" name="res-address" id="residential-address">
+                    <br>
+
+                    <label for="city">Enter City:</label>
+                    <input type="text" name="city-loc" id="city">
+                    <br>
+
+                    <label for="state">Select State:</label>
+                    <select id="state" name="usa-states">
+                      <option value="">Please select a State</option>
+                      <option value="wa">Washington</option>
+                      <option value="or">Oregon</option>
+                      <option value="ca">California</option>
+                      <option value="ak">Alaska</option>
+                      <option value="ny">New York</option>
+                      <option value="na">Other</option>
+                    </select>
+                  </fieldset>
+                </div>
+
+                <div class="grid-col-6">
+
+                  <fieldset class="visitor-input1">
+                    <legend>Was this site helpful?</legend>
+
+                    <input type="radio" name="fav-response3" id="yes-response1" value="0">
+                    <label for="yes-response1">Yes</label>
+                    <br>
+
+                    <input type="radio" name="fav-response3" id="no-response1" value="1">
+                    <label for="no-response1">No</label>
+                    <br>
+
+                    <input type="radio" name="fav-response3" id="sw-response1" value="2" checked>
+                    <label for="sw-response1">Some what</label>
+                  </fieldset>
+                  <!-- <br> -->
+                  <br>
+
+                </div>
+
+                <div class="grid-col-6">
+                  <fieldset class="visitor-input1">
+                    <legend>What part of the site do you approve of</legend>
+                    <input type="checkbox" name="my-website-design2" id="part1" value="cold">
+                    <label for="part1">Header</label>
+                    <br>
+                    <input type="checkbox" name="my-website-design2" id="part2" value="warm">
+                    <label for="part2">Footer</label>
+                    <br>
+                    <input type="checkbox" name="my-website-design2" id="part3" value="hot">
+                    <label for="part3">Main section</label>
+                    <br>
+                    <input type="checkbox" name="my-website-design2" id="part4" value="hot" checked>
+                    <label for="part4">Body color</label>
+                  </fieldset>
+                </div>
+
+                <div class="grid-col-6">
+                  <fieldset class="visitor-input1">
+                    <legend>Please leave comment!</legend>
+
+                  <textarea name="comments" id="comments" rows="3" cols="40"
+                  spellcheck="on" >
+                  </textarea>
+                  </fieldset>
+
+                </div>
+
+                <div class="grid-col-6">
+                  <fieldset class="visitor-input1">
+                    <legend>Email and password:</legend>
+                      <label for="email-input1">Enter your email address:</label>
+                      <input type="email" name="email-entry" value="0" id="email-input1">
+                      <br>
+                      <label for="number-rating1">Overall rating of this Page (1-100):</label>
+                      <input type="number" min="1" max="100" value="25" name="rating" id = "number-rating1">
+                      <br>
+                      <label for="login-password">Enter your password:</label>
+                      <input type="password" name="pw" id="login-password" required>
+                  </fieldset>
+                </div>
+
+                <div class="grid-col-6">
+                  <fieldset class="visitor-input1">
+                    <legend>Date and Slide rating</legend>
+                      <label for="range-of-Friendliness">User Friendliness:</label>
+                      <input type="range" class="speed-range" max="200" min="50"  name="speed" id="range-of-speed">
+                      <br><br>
+                      <label for="birth-date1">Date visited:</label>
+                      <input type="date"  name="birthdate" id="birth-date1">
+                  </fieldset>
+                </div>
+              </div>
+
+                <br>
+
+                <div class="submit-visitor-opinion">
+                  <input type="submit" class="send-your-opinion" name="submit-recomendation" value="Submit Your Accessment!">
+                </div>
+            </form>
+        </div>
+        <br>
+        <br>
+      </main>
+
+      <footer class="main-footer-content">
+        <h3>designed by asmerom.</h3>
+          <p>
+            copyright © 2017. All rights reserved.
+          </p>
+      </footer>
+  </body>
+</html>

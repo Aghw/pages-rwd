@@ -1,0 +1,245 @@
+* {box-sizing: border-box;}
+
+:root {
+  --body-bgd: rgb(21, 128, 191);
+  /*--header-footer-bgd: rgb(23,90,174);*/
+  --main-space-bgd:  rgb(255,255,214);
+}
+
+
+body {
+   background-color: var(--body-bgd);
+   /*background-color: rgb(21, 128, 191);*/
+   position:relative;
+   margin: 0 auto;
+   /*width: 70%;*/
+}
+
+
+
+#primary-content {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0 2rem;
+}
+
+#primary-content::first-letter {
+   font-size: 4rem;
+}
+
+
+/**
+ ** Page-header of Archery web pages
+ **/
+.main-header-content {
+  margin: 0 auto;
+
+  background-color: rgb(255,255,242);
+  color: rgb(43,23,255);
+
+}
+
+.header-logo-and-title {
+
+    display:flex;
+    flex-direction: row;
+      text-align: center;
+}
+
+header p {
+  font-size: 1.5rem;
+  line-height: 0.1rem;
+}
+
+footer p {
+
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+
+.main-body-of-page {
+  background-color: var(--main-space-bgd);
+  margin: 0 auto;
+  width: 70%;
+  padding: 2rem;
+}
+
+.main-body-of-page h2 {
+  font-weight: 500;
+  font-family: Tahoma, sans-serif;
+  font-size: 1.5rem;
+  margin: auto;
+  top: 0;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.rwd-explaining {
+  width: 100%;
+  background: #DDD777;
+  /*background-color: rgb(203, 159, 128);*/
+}
+
+.rwd-explaining h2 {
+  font-weight: 500;
+  font-family: Tahoma, sans-serif;
+  font-size: 1.5rem;
+  margin: auto;
+  top: 0;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.rwd-explaining p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-align: left;
+  color: gray;
+  font-weight: lighter;
+  padding: 0  1rem 0 1rem;
+}
+/**
+  ** Page-footer of Archery web pages
+  **/
+ .main-footer-content {
+   background-color: rgb(255,255,242);
+   font-size: 1rem;
+   color: black;
+   padding: 0.2em 1em 1em 2em;
+ }
+
+ .main-footer-content h3 {
+   text-align: center;
+   font-size: 0.8rem;
+ }
+
+ .main-footer-content p {
+   font-size: 1rem;
+   color: black;
+ }
+
+ /**
+  **
+  ** Grid for students-profile
+  **/
+  .content {
+
+    background: #eee;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* Anything can be a grid! */
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* telling css that columns shouldn't flex, but auto cells should */
+  .grid > [class^="grid-"] { flex: none; }
+  .grid > .grid-cell { flex: 1; }
+
+
+
+  /* relative widths for each column size */
+  .grid-col-1  { width: 8.3333%; }
+  .grid-col-2  { width: 16.6667%; }
+  .grid-col-3  { width: 25%; }
+  .grid-col-4  { width: 33.3333%;   }
+  .grid-col-5  { width: 41.6667%; }
+  .grid-col-6  { width: 50%; }
+  .grid-col-7  { width: 58.3333%; }
+  .grid-col-8  { width: 66.6667%; }
+  .grid-col-9  { width: 75%; }
+  .grid-col-10 { width: 83.3333%; }
+  .grid-col-11 { width: 91.6667%; }
+
+  /* Adding gutters to the grid */
+  .grid-guttered > [class^="grid-"] {
+    padding: 1rem 1rem 0 0;
+  }
+
+  .grid-guttered > [class^="grid-"]:last-child {
+    padding-right: 0;
+  }
+
+  /* make any element's content vertically & horizontally centered */
+  /* this is great for links & buttons */
+  .centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .grid-col-3  >  .content {
+    background-color:  rgb(207,166,120);
+    border: 0.05rem dashed lightgray;
+    border-radius: 10px;
+    height: 5rem;
+  }
+
+
+  .grid-col-6  >  .content {
+    background-color:  rgb(207,166,120);
+    border-radius: 10px;
+  }
+
+
+
+  .login-to-account {
+    right: 1rem;
+  }
+
+
+  .grid-col-6 > .content h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: auto;
+    flex: auto;
+    padding-left: 1rem;
+    text-align: justify;
+  }
+
+  .grid-col-6  {
+    font-size: 0.75rem;
+    font-family: Trebuchet, Arial, Helevetica sans, sans-serif;
+
+    background-color: rgba(130, 143, 196, 0.25);
+    border: 0.05rem dashed yellow;
+    border-radius: 10px;
+    margin: auto;
+    flex: auto;
+    padding: 1rem, 1rem;
+    text-align: justify;
+  }
+
+  /**
+   ** form input
+   **/
+ .speed-range {
+   background-color: white;
+
+ }
+
+.send-your-opinion {
+  align-content: center
+  margin: auto;
+}
+
+.submit-visitor-opinion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visitor-input1 {
+  border-radius: 10px;
+  border: 0.07rem dashed white;
+  margin: 0 0 1rem 1rem;
+}
